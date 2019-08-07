@@ -1,0 +1,710 @@
+.body {
+    font-family: 'Maven Pro', sans-serif;
+
+    font-size: 13px;
+}
+
+.html {
+    font-size: 13px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.page {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.nav__link {
+    color: #ffffff;
+    font-family: "Maven Pro";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+}
+
+
+/*Header*/
+.header {
+    width: 100%;
+    padding-top: 30px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.logo__img {
+    width: 100%;
+    min-width: 240px;
+}
+
+.header__inner {
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header__arrow {
+    position: relative;
+    height: 15vh;
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.header__arrow__img {
+    margin-top: 200px;
+    text-align: center;
+    line-height: 55px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 19px 2px rgba(204, 204, 223, 0.5);
+
+}
+
+/*logo*/
+
+
+
+/*intro*/
+
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url('/img/header/headerbackground.png') center no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 600px;
+}
+
+.intro__inner {
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.intro__subtitleUp {
+    color: #ffffff;
+    font-family: "Maven Pro";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 32px;
+    text-transform: uppercase;
+    /* Text style for "SOCIAL MAR" */
+    letter-spacing: 0.7px;
+    margin-bottom: 30px;
+}
+
+.intro__subtitleUp:before {
+    content: '';
+    width: 20px;
+    height: 1px;
+    background-color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+
+}
+
+.intro__subtitleUp:after {
+    content: '';
+    width: 20px;
+    height: 1px;
+    background-color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.intro__title {
+    color: #ffffff;
+    font-family: "Maven Pro";
+    font-size: 86px;
+    font-weight: 500;
+    line-height: 72px;
+    /* Text style for "Pricing Ta" */
+    letter-spacing: -2.42px;
+    margin-bottom: 30px;
+
+}
+
+.intro__subtitleDown {
+    color: #ffffff;
+    font-family: "Maven Pro";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+
+}
+
+
+
+/* Nav */
+
+.nav {
+
+    font-size: 16px;
+
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: center;
+    margin: 0 15px;
+    position: relative;
+
+    color: #fff;
+    text-decoration: none;
+
+    transition: color 0.1s linear;
+}
+
+.nav__link:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.nav-toggle {
+    position: absolute;
+    top: 50px;
+    right: 24px;
+    z-index: 1;
+    width: 30px;
+
+    font-size: 0;
+    color: transparent;
+    border: 0;
+    background: none;
+    cursor: pointer;
+
+
+}
+
+
+.nav-toggle:after,
+.nav-toggle:before {
+    content: '';
+    width: 100%;
+    height: 3px;
+
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    z-index: 1;
+
+}
+
+.nav-toggle:after {
+    content: '';
+    top: -8px;
+}
+
+.nav-toggle:before {
+    content: '';
+    top: 8px;
+}
+
+.nav-toggle__item {
+    width: 100%;
+    height: 3px;
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+
+}
+
+.get-started-btn {
+    color: #ffffff;
+    font-family: "Maven Pro";
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 32px;
+    text-transform: uppercase;
+    /* Text style for "get starte" */
+    letter-spacing: 0.6px;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-left: 30px;
+}
+
+/* pricing */
+
+.pricing {
+    display: block;
+    background-color: #f9fafc;
+
+
+}
+
+.pricing__header {
+    padding-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+
+    width: 100%;
+
+    max-width: 380px;
+
+
+}
+
+
+
+.prising__subtitleUp {
+    color: #9fa4af;
+    font-family: "Maven Pro";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 32px;
+    text-transform: uppercase;
+    /* Text style for "MIsocial" */
+    letter-spacing: 0.7px;
+    margin-bottom: 20px;
+}
+
+.pricing__title {
+    color: #4f4f6f;
+    font-family: "Maven Pro";
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 72px;
+    /* Text style for "Select a P" */
+    letter-spacing: -1.69px;
+    margin-bottom: 30px;
+}
+
+.prising__subtitleDown {
+    color: #9fa4af;
+    font-family: "Maven Pro";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 100px;
+
+
+}
+
+.prising__tags__kind {
+    color: #9fa4af;
+    font-family: "Maven Pro";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 32px;
+    text-transform: uppercase;
+    /* Text style for "personal" */
+    letter-spacing: 0.7px;
+    margin-bottom: 30px;
+}
+
+.prising__tags__text {
+    color: #9fa4af;
+    font-family: "Maven Pro";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    max-width: 300px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 140px;
+
+}
+
+.prising__tags__price {
+    margin-bottom: 20px;
+}
+
+
+.price-btn {
+    color: #c6cdde;
+    font-family: "Maven Pro";
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 32px;
+    text-transform: uppercase;
+    /* Text style for "select pla" */
+    letter-spacing: 0.6px;
+    width: 50%;
+    height: 50px;
+    box-shadow: 0 0 19px 2px rgba(204, 204, 223, 0.5);
+    border-radius: 25px;
+    border: 1px solid #d7dbe8;
+    background-color: #ffffff;
+    cursor: pointer;
+
+
+}
+
+.price-btn:hover {
+    color: #fff;
+    background-color: #6e45e2;
+}
+
+
+.prising__tags {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-bottom: 120px;
+    flex-wrap: wrap;
+}
+
+
+
+.prising__tags__item {
+
+    max-width: 440px;
+    width: 32%;
+    height: 600px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 30px;
+    border: 1px solid #d7dbe8;
+    transition: box-shadow .2s linear;
+
+
+
+}
+
+.prising__tags__price {
+    color: #4f4f6f;
+    font-family: "Maven Pro";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 72px;
+}
+
+.prising__tags__price sup {
+
+    color: #4f4f6f;
+    font-family: "Maven Pro";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 50.55px;
+    /* Text style for "$" */
+    letter-spacing: -0.64px;
+}
+
+.prising__tags__price {
+    color: #4f4f6f;
+    font-family: "Maven Pro";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 72px;
+    /* Text style for "29" */
+    font-size: 60px;
+    letter-spacing: -1.69px;
+}
+
+.prising__tags__price span {
+    color: #4f4f6f;
+    font-family: "Maven Pro";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 72px;
+    letter-spacing: -0.51px;
+}
+
+.prising__tags__item:hover {
+    box-shadow: 0 0 82px 10px rgba(204, 204, 223, 0.71);
+}
+
+.img__tags img {
+    margin-top: 60px;
+    margin-bottom: 50px;
+    max-width: 120px;
+    max-height: 100px;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.block__get__start {
+    background: url('img/block-map/bcg-map.png') center no-repeat;
+    height: 520px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+.header__get__start {
+    max-width: 700px;
+    width: 100%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+
+}
+
+.header__get__start__subtitle {
+    color: #ffffff;
+    font-family: "Maven Pro";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 32px;
+    text-transform: uppercase;
+    /* Text style for "SOCAL MARK" */
+    letter-spacing: 0.7px;
+    margin-bottom: 15px;
+}
+
+.header__get__start__title {
+    color: #ffffff;
+    font-family: "Maven Pro";
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 72px;
+    /* Text style for "Take contr" */
+    letter-spacing: -1.69px;
+}
+
+.start__btn {
+
+    color: #c2c9db;
+    font-family: "Maven Pro";
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 32px;
+    text-transform: uppercase;
+    /* Text style for "explore fe" */
+    letter-spacing: 0.6px;
+    box-shadow: 0 0 19px 2px rgba(204, 204, 223, 0.5);
+    border-radius: 25px;
+    border: 1px solid #d7dbe8;
+    background-color: #ffffff;
+    width: 190px;
+    height: 50px;
+
+
+
+}
+
+.get__start__btns {
+    margin-top: 20px;
+
+
+}
+
+.start__btn:focus {
+    outline: none;
+}
+
+.start__btn:hover {
+    background-color: #6e45e2;
+}
+
+.start__btn--second {
+    margin-left: 10px;
+}
+
+/* footer*/
+
+.footer_nav__link {
+    color: #6a6a77;
+    font-family: "Maven Pro";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.footer_nav__link:hover {
+    color: #756edc;
+    text-decoration: none;
+}
+
+.footer {
+    width: 100%;
+    padding-bottom: 30px;
+
+
+
+
+}
+
+
+
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__header__logo {
+    margin-top: 30px;
+
+
+}
+
+.footer__nav {
+    margin-top: 50px;
+
+}
+
+
+
+.footer__get-started-btn {
+    text-decoration: none;
+
+    text-transform: uppercase;
+    /* Text style for "get starte" */
+    letter-spacing: 0.6px;
+    border: 1px solid #fff;
+    padding: 20px 30px;
+    border-radius: 30px;
+
+    background-color: #6e45e2;
+    margin-left: 30px;
+    color: #ffffff;
+    font-family: "Maven Pro";
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 32px;
+    text-transform: uppercase;
+    /* Text style for "get starte" */
+    letter-spacing: 0.6px;
+
+}
+
+.footer__get-started-btn:hover {
+    box-shadow: 0 0 30px 10px rgba(204, 204, 223, 0.5);
+}
+
+@media(max-width: 1230px) {}
+
+@media(max-width: 990px) {
+    .nav__link {
+        margin: 0 15px;
+    }
+
+
+    .footer__get-started-btn {
+        margin-left: 15px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .footer_nav__link {
+        display: none;
+    }
+
+
+}
+
+@media(max-width: 770px) {
+
+
+
+    .intro__title {
+        font-size: 76px;
+    }
+
+    .prising__tags__item {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+    }
+
+    .prising__tags {
+        padding-bottom: 60px;
+    }
+}
+
+@media(max-width: 575px) {
+    .intro__title {
+        font-size: 56px;
+    }
+
+    .intro__subtitleUp {
+        font-size: 11px;
+    }
+
+
+    .pricing__title {
+        font-size: 56px;
+    }
+
+    .start__btn {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .header__get__start__title {
+        font-size: 35px;
+    }
+
+    .start__btn--second {
+        margin-top: 10px;
+
+    }
+
+    .footer__get-started-btn {
+        display: none;
+    }
+}
